@@ -101,7 +101,7 @@ Let’s now make our query a bit more interesting. For every type of sensor, if 
 
 ![](./media/stream-analytics-get-started-with-iot-devices/stream-analytics-get-started-with-iot-devices-10.png)
 
-You can see, now the results contain only 245 rows with those sensors where the average temperate is greater than 100. In this query we have grouped the stream of events by dspl, which is the Sensor Name and over a **Tumbling Window** of 30 seconds. When we do such temporal queries, its essential to state how we want to progress time. By using the **TIMESTAMP BY** clause, we have specified the “time” column as a way to progress time for all temporal calculations. For detailed information please read our MSDN topics on [Time Management](https://msdn.microsoft.com/library/azure/mt582045.aspx) and [Windowing](https://msdn.microsoft.com/library/azure/dn835019.aspx).
+You can see, now the results contain only 245 rows with those sensors where the average temperature is greater than 100. In this query we have grouped the stream of events by dspl, which is the Sensor Name and over a **Tumbling Window** of 30 seconds. When we do such temporal queries, its essential to state how we want to progress time. By using the **TIMESTAMP BY** clause, we have specified the “time” column as a way to progress time for all temporal calculations. For detailed information please read our MSDN topics on [Time Management](https://msdn.microsoft.com/library/azure/mt582045.aspx) and [Windowing](https://msdn.microsoft.com/library/azure/dn835019.aspx).
 
 ![](./media/stream-analytics-get-started-with-iot-devices/stream-analytics-get-started-with-iot-devices-11.png)
 
